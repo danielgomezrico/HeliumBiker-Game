@@ -32,6 +32,14 @@ namespace HeliumBiker.DeviceCtrl
             }
         }
 
+        /// <summary>
+        /// Clear the messages
+        /// </summary>
+        public void clearMessages()
+        {
+            qMessage.Clear();
+        }
+
         public void analizeAcceleration(float x, float y)
         {
             if (x < -3)

@@ -51,6 +51,8 @@ namespace HeliumBiker.DeviceCtrl
 
                         streamAnalizer.addMessage(message);
                     }
+
+                    streamAnalizer.clearMessages();
                 }
             }
         }
