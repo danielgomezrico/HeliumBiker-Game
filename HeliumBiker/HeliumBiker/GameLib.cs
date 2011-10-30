@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework.Graphics;
+﻿using System.Collections.Generic;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker
 {
-    class GameLib
+    internal class GameLib
     {
         public static AudioEngine engine;               // Motor de sonidos
         public static SoundBank soundBank;              // Banco de sonidos
@@ -40,7 +37,7 @@ namespace HeliumBiker
         {
             if (lib == null)
             {
-                lib = new GameLib(game,sp);
+                lib = new GameLib(game, sp);
                 lib.loadGlobalTextures();
                 lib.loadFonts();
             }
@@ -115,7 +112,7 @@ namespace HeliumBiker
 
         public void loadFonts()
         {
-            fonts.Add(FontE.percentage,game.Content.Load<SpriteFont>("Fonts/percentage"));
+            fonts.Add(FontE.percentage, game.Content.Load<SpriteFont>("Fonts/percentage"));
         }
 
         public void loadSounds()

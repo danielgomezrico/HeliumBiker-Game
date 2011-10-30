@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using HeliumBiker.DeviceCtrl;
 using HeliumBiker.ScreenCtrl;
-using HeliumBiker.DeviceCtrl;
-using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.MenuCtrl
 {
-    class ConnectionScreen : Screen
+    internal class ConnectionScreen : Screen
     {
         private Button b;
 

@@ -146,3 +146,42 @@ C:\Users\danielgomez22\Desktop\HeliumBiker Servidor\HeliumBiker\HeliumBiker\bin\
 C:\Users\danielgomez22\Desktop\HeliumBiker Servidor\HeliumBiker\HeliumBiker\bin\x86\Debug\InTheHand.Net.Personal.dll
 C:\Users\danielgomez22\Desktop\HeliumBiker Servidor\HeliumBiker\HeliumBiker\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\danielgomez22\Desktop\HeliumBiker Servidor\HeliumBiker\HeliumBiker\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\pixel.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\ballon.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\frontMountains.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\backMountains.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\waves1.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bike.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bird.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\pirana.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\stone.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\hand.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\about.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\exit.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\logo.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\menuScreen.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\start.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\connect.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\house.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\ramp.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\back.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\easy.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\hard.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\medium.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\monster.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bg.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\aboutScreen.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Fonts\percentage.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\10.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\11.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\BallonPop.xnb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\sonidos.xgs
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\Wave Bank.xwb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\Sound Bank.xsb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\HeliumBiker.exe
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\HeliumBiker.pdb
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\InTheHand.Net.Personal.dll
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\obj\x86\Debug\HeliumBiker.exe
+C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\obj\x86\Debug\HeliumBiker.pdb

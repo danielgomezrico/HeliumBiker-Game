@@ -36,13 +36,11 @@
         diez,
         pop,
         once
-
     }
 
     public enum FontE
     {
         percentage
-
     }
 
     public enum InputE

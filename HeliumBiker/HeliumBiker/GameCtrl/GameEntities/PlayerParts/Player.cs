@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 using HeliumBiker.DeviceCtrl;
 using HeliumBiker.GameCtrl.GameEntities.ThrowableObjects;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
 {
-    class Player : BallonListener
+    internal class Player : BallonListener
     {
-
         private World world;
         private Vector2 position;
         private Bike bike;
@@ -122,15 +120,16 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
                 angled = true;
                 bike.Animation.Reverse = true;
                 bike.Animation.Stick = false;
-            }else
-            if (dev.VInput == InputE.up)
-            {
-                newAcc.Y -= currentForce;
-                bike.Angle = MathHelper.ToRadians(-10f);
-                angled = true;
-                bike.Animation.Reverse = false;
-                bike.Animation.Stick = false;
             }
+            else
+                if (dev.VInput == InputE.up)
+                {
+                    newAcc.Y -= currentForce;
+                    bike.Angle = MathHelper.ToRadians(-10f);
+                    angled = true;
+                    bike.Animation.Reverse = false;
+                    bike.Animation.Stick = false;
+                }
             if (dev.VInput == InputE.center)
             {
                 bike.Animation.Stick = true;
@@ -156,7 +155,6 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
 
             if (dev.FiringInput == InputE.shooting)
             {
-
                 hand.Position = bike.Position - dev.getPointPosition() + disp;
                 if (hand.Position.X > bike.Position.X)
                 {
@@ -173,7 +171,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
                     diff.Normalize();
                     diff *= 40f;
                     Stone stone = new Stone(Bike.Position, diff);
-                    if (diff.X > 0) 
+                    if (diff.X > 0)
                     {
                         objs.Add(stone);
                         stones.Add(stone);
@@ -224,19 +222,18 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
                 }
                 else
                 {
-
                 }
-            }   
+            }
         }
 
         private void createBallon(int i, int j, int length)
         {
             float l = length * 25f;
             float percentage = (float)j / (float)length * l;
-            Vector2 pos = new Vector2( (Position.X - l/2) + percentage + 10, getY(length,j) + Position.Y - 40 - (i*25) );
-            float rotation = (float) Math.Atan2(pos.Y - bike.Position.Y , pos.X - bike.Position.X) + MathHelper.PiOver2;
+            Vector2 pos = new Vector2((Position.X - l / 2) + percentage + 10, getY(length, j) + Position.Y - 40 - (i * 25));
+            float rotation = (float)Math.Atan2(pos.Y - bike.Position.Y, pos.X - bike.Position.X) + MathHelper.PiOver2;
             float degree = MathHelper.ToDegrees(rotation);
-            float layerDepth = Math.Abs((bike.Position.X - pos.X) / l)/10f + 0.1f;
+            float layerDepth = Math.Abs((bike.Position.X - pos.X) / l) / 10f + 0.1f;
             Random r = new Random(i * j * length);
             float chordLength = (Position - pos).Length();
             Chord c = new Chord(pos, chordLength, rotation + MathHelper.ToRadians(180));
@@ -249,7 +246,6 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
             b.LayerDepth = layerDepth;
             Ballons.Add(b);
         }
-
 
         private float getY(float length, int x)
         {
@@ -268,7 +264,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
 
         public float BallonPos(float x)
         {
-            return (float)Math.Pow((float)-x/0.5, (float)2) - 20;
+            return (float)Math.Pow((float)-x / 0.5, (float)2) - 20;
         }
 
         internal Bike Bike
@@ -276,6 +272,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
             get { return bike; }
             set { bike = value; }
         }
+
         public List<Ballon> getBallonList()
         {
             return Ballons;
@@ -285,11 +282,13 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
         {
             return Ballons.ElementAt(at);
         }
+
         internal List<Ballon> Ballons
         {
             get { return ballons; }
             set { ballons = value; }
         }
+
         public Vector2 Position
         {
             get { return position; }
@@ -303,6 +302,6 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
             ballons.Remove(b);
         }
 
-        #endregion
+        #endregion BallonListener Members
     }
 }

@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl.GameEntities.Enemies
 {
-    class BirdGenerator
+    internal class BirdGenerator
     {
         private World world;
         private float intensityTime;
@@ -15,6 +12,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.Enemies
         private float horVel;
         private Random random;
         private List<Bird> birds;
+
         public BirdGenerator(World world, float intensityTime, float horVel)
         {
             this.world = world;
@@ -42,6 +40,5 @@ namespace HeliumBiker.GameCtrl.GameEntities.Enemies
                 }
             }
         }
-
     }
 }

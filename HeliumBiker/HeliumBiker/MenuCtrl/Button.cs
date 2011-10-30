@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 
 namespace HeliumBiker.MenuCtrl
 {
-    class Button : Entity
+    internal class Button : Entity
     {
         private Vector2 disp;
         private bool focus = false;
@@ -17,8 +13,8 @@ namespace HeliumBiker.MenuCtrl
         private string text;
         private Color cText;
 
-        public Button (Vector2 position, Vector2 size, TextureE textureE) :
-            base(position,size,Vector2.Zero,0f,Color.White,getTexture(textureE),Animation.getAnimation(getTexture(textureE)))
+        public Button(Vector2 position, Vector2 size, TextureE textureE) :
+            base(position, size, Vector2.Zero, 0f, Color.White, getTexture(textureE), Animation.getAnimation(getTexture(textureE)))
         {
             disp = new Vector2(10f, 10f);
             LayerDepth = 0.5f;
@@ -57,8 +53,8 @@ namespace HeliumBiker.MenuCtrl
 
         public bool Focus
         {
-            get { return focus;}
-            set { focus = value;}
+            get { return focus; }
+            set { focus = value; }
         }
     }
 }

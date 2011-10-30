@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using HeliumBiker.DeviceCtrl;
 using Microsoft.Xna.Framework;
-using HeliumBiker.DeviceCtrl;
 
 namespace HeliumBiker.ScreenCtrl
 {
-    public enum State { active,hidden,transitionIn,transitionOut }
+    public enum State { active, hidden, transitionIn, transitionOut }
 
     public abstract class Screen : DrawableGameComponent
     {
@@ -62,11 +58,15 @@ namespace HeliumBiker.ScreenCtrl
         }
 
         public abstract void update(GameTime gameTime);
+
         public abstract void draw(GameTime gameTime);
+
         public abstract void transitionOut(GameTime gameTime);
+
         public abstract void transitionIn(GameTime gameTime);
 
-        public void setState(State state){
+        public void setState(State state)
+        {
             this.state = state;
             switch (state)
             {
@@ -76,7 +76,7 @@ namespace HeliumBiker.ScreenCtrl
                     break;
                 case State.transitionIn:
                     if (!Game.Components.Contains(this))
-                    Game.Components.Add(this);
+                        Game.Components.Add(this);
                     break;
                 case State.transitionOut:
                     break;

@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework.Graphics;
+﻿using HeliumBiker.DeviceCtrl;
 using HeliumBiker.ScreenCtrl;
-using HeliumBiker.DeviceCtrl;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.MenuCtrl
 {
-    class MenuLevels : Screen
+    internal class MenuLevels : Screen
     {
         private enum buttonsE
         {
@@ -29,7 +25,7 @@ namespace HeliumBiker.MenuCtrl
             : base(game, screenManager, dev)
         {
             logo = GameLib.getInstance().get(TextureE.logo);
-            buttons = new Button[] 
+            buttons = new Button[]
             {
                 new Button(new Vector2(Game1.width/2 - 300/2 , 0), new Vector2(300, 300),TextureE.easy),
                 new Button(new Vector2(Game1.width/2 - 300/2 , 100), new Vector2(300, 300),TextureE.medium),
@@ -101,7 +97,6 @@ namespace HeliumBiker.MenuCtrl
 
         public override void transitionOut(Microsoft.Xna.Framework.GameTime gameTime)
         {
-
         }
 
         public override void transitionIn(Microsoft.Xna.Framework.GameTime gameTime)

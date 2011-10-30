@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework;
 using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
 using HeliumBiker.GameCtrl.GameEntities.ThrowableObjects;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
 {
-    class Ballon : PhysicsObject
+    internal class Ballon : PhysicsObject
     {
-        public static Color[] colors = 
+        public static Color[] colors =
         {   new Color(182,14,42),
             new Color(227,216,214),
             new Color(93,171,217),
@@ -29,7 +27,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
         private Chord chord;
 
         public Ballon(Vector2 position, float angle, Color color, bool owned, Chord chord)
-            : base(position, new Vector2(40,40), angle, color, getLibTexuture(), Animation.getAnimation(getLibTexuture()), getShapes())
+            : base(position, new Vector2(40, 40), angle, color, getLibTexuture(), Animation.getAnimation(getLibTexuture()), getShapes())
         {
             this.owned = owned;
             this.chord = chord;
@@ -113,7 +111,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
                 int lenght = i + 2;
                 for (int j = 0; j < lenght; j++)
                 {
-                    createBallon(id, j, lenght, position,ballons);
+                    createBallon(id, j, lenght, position, ballons);
                     ballonCounter++;
                 }
                 id++;
@@ -125,7 +123,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
                     int length = maxRow * 2 - i + 2;
                     for (int j = 0; j < length; j++)
                     {
-                        createBallon(id, j, length, position,ballons);
+                        createBallon(id, j, length, position, ballons);
                         ballonCounter++;
                     }
                     id++;
@@ -151,6 +149,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
             b.LayerDepth = layerDepth;
             ballons.Add(b);
         }
+
         private static float getY(float length, int x)
         {
             return (-(x * x) / length);

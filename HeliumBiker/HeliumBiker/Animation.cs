@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 
 namespace HeliumBiker
 {
@@ -12,6 +8,7 @@ namespace HeliumBiker
         private float animationRate = 50f;
 
         #region variables locales
+
         private Rectangle src;
         private int[] frameCounts;      // Arreglo que muestra las imagenes que tiene cada fila
         private float timer = 0f;       // Tiempo
@@ -22,11 +19,13 @@ namespace HeliumBiker
         private bool stick = false;     // Corre la sequencia y se queda en la ultima imagen
         private bool switcher = false;  // Hace switcher en la imagen
         private float rate = 1f;        // Un escalador para manejar la velocidad de el refrescamiento
-        #endregion
+
+        #endregion variables locales
 
         /**
          * Constructor de la clase Animation
          */
+
         public Animation(int imageSize, int[] frameCounts)
         {
             this.src = new Rectangle(0, 0, imageSize, imageSize);
@@ -38,6 +37,7 @@ namespace HeliumBiker
         /**
          * Segundo Constructor de la clase Animation
          */
+
         public Animation(int imageWidth, int imageHeigth, int[] frameCounts)
         {
             this.src = new Rectangle(0, 0, imageWidth, imageHeigth);
@@ -49,6 +49,7 @@ namespace HeliumBiker
         /**
          * Resetea el formato de recorrido de sequencia
          **/
+
         public void reset()
         {
             reverse = false;
@@ -58,6 +59,7 @@ namespace HeliumBiker
         /**
          * Refresca la animacion de la entidad
          */
+
         public void refresh(float deltaTime)
         {
             timer += deltaTime;
@@ -95,75 +97,90 @@ namespace HeliumBiker
         }
 
         # region Gets and Sets
+
         public float AnimationRate
         {
             get { return animationRate; }
             set { animationRate = value; }
         }
+
         public Rectangle getSrcRect()
         {
             return new Rectangle(currentFrame * src.Width, activeRow * src.Height, src.Width, src.Height);
         }
+
         public int getCurrentFrame()
         {
             return currentFrame;
         }
+
         public void setCurrentFrame(int currentFrame)
         {
             this.currentFrame = currentFrame;
         }
+
         public int getImageSizeW()
         {
             return src.Width;
         }
+
         public int getImageSizeH()
         {
             return src.Height;
         }
+
         public int CurrentFrame
         {
             get { return currentFrame; }
             set { currentFrame = value; }
         }
+
         public int ActiveRow
         {
             get { return activeRow; }
             set { activeRow = value; }
         }
+
         public bool Toggle
         {
             get { return toggle; }
             set { toggle = value; }
         }
+
         public bool Reverse
         {
             get { return reverse; }
             set { reverse = value; }
         }
+
         public bool Stick
         {
             get { return stick; }
             set { stick = value; }
         }
+
         public bool Switcher
         {
             get { return switcher; }
             set { switcher = value; }
         }
+
         public float Rate
         {
             get { return rate; }
             set { rate = value; }
         }
+
         public int getFrameCount(int index)
         {
             return frameCounts[index];
         }
+
         # endregion
 
         internal static Animation getAnimation(Microsoft.Xna.Framework.Graphics.Texture2D t)
         {
-            return new Animation(t.Height, new int[] { t.Width/t.Height });
+            return new Animation(t.Height, new int[] { t.Width / t.Height });
         }
 
         internal static Animation getAnimation(Microsoft.Xna.Framework.Graphics.Texture2D texture2D, Vector2 size)

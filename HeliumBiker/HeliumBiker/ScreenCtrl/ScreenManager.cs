@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using HeliumBiker.MenuCtrl;
-using HeliumBiker.DeviceCtrl;
+﻿using HeliumBiker.DeviceCtrl;
 using HeliumBiker.GameCtrl;
+using HeliumBiker.MenuCtrl;
 
 namespace HeliumBiker.ScreenCtrl
 {
@@ -38,8 +34,8 @@ namespace HeliumBiker.ScreenCtrl
         internal void startGame(int level)
         {
             levels.setState(State.hidden);
-            world = new World(game, this, devMan,level);
-            game.Components.Add(world);;
+            world = new World(game, this, devMan, level);
+            game.Components.Add(world); ;
         }
 
         internal void startMenu()

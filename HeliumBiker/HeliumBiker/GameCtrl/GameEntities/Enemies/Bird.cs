@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework;
+using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
 using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
 using HeliumBiker.GameCtrl.GameEntities.ThrowableObjects;
-using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl.GameEntities.Enemies
 {
-    class Bird : ThrowableObject
+    internal class Bird : ThrowableObject
     {
         bool alive = true;
 
         public Bird(Vector2 position)
-            : base(position,new Vector2(60,60), 0.0f ,Color.White, getTexture(), Animation.getAnimation(getTexture()),getShapes())
+            : base(position, new Vector2(60, 60), 0.0f, Color.White, getTexture(), Animation.getAnimation(getTexture()), getShapes())
         {
             LayerDepth = 0.11f;
             Animation.AnimationRate = 20f;
@@ -26,7 +23,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.Enemies
             return GameLib.getInstance().get(TextureE.bird);
         }
 
-        private static Shape [] getShapes()
+        private static Shape[] getShapes()
         {
             return new Shape[]
             {
@@ -37,7 +34,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.Enemies
 
         public override void collitionWith(PhysicsObject obj)
         {
-            if (alive && ( obj is Stone || obj is Bike) )
+            if (alive && (obj is Stone || obj is Bike))
             {
                 World.points += 300;
                 alive = false;

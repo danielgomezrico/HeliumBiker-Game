@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 
 namespace HeliumBiker.GameCtrl.GameEntities.ShapeCtrl
 {
-    abstract class Shape
+    internal abstract class Shape
     {
         private Vector2 disp;
 

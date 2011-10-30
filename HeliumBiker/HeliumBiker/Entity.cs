@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
 
 namespace HeliumBiker
 {
-    abstract class Entity
+    internal abstract class Entity
     {
         private Animation animation;
         private Vector2 position;
@@ -22,8 +13,8 @@ namespace HeliumBiker
         private Color color;
         private Vector2 origin;
         private float layerDepth;
-        
-        public Entity(Vector2 position, Vector2 size, Vector2 origin, float angle, Color color, Texture2D texture, Animation animation )
+
+        public Entity(Vector2 position, Vector2 size, Vector2 origin, float angle, Color color, Texture2D texture, Animation animation)
         {
             this.animation = animation;
             this.position = position;
@@ -51,15 +42,18 @@ namespace HeliumBiker
         }
 
         #region gets y sets
+
         public Vector2 Size
         {
             get { return size; }
             set { size = value; }
         }
+
         public Rectangle getSpace()
         {
             return new Rectangle((int)position.X, (int)position.Y, (int)size.X, (int)size.Y);
         }
+
         public Vector2 Position
         {
             get
@@ -67,37 +61,45 @@ namespace HeliumBiker
             set
             { position = value; }
         }
+
         public Color Color
         {
             get { return color; }
             set { color = value; }
         }
+
         public float LayerDepth
         {
             get { return layerDepth; }
             set { layerDepth = value; }
         }
+
         public float Angle
         {
             get { return angle; }
             set { angle = value; }
         }
+
         public Animation Animation
         {
             get { return animation; }
             set { animation = value; }
         }
+
         public Texture2D Texture
         {
             get { return texture; }
             set { texture = value; }
         }
-        public void addAlpha(byte b){
+
+        public void addAlpha(byte b)
+        {
             if (b < 255)
             {
                 color.A += b;
             }
         }
-        #endregion
+
+        #endregion gets y sets
     }
 }

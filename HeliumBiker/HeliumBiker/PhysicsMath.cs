@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using System.Linq;
 using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
+using Microsoft.Xna.Framework;
 
 namespace HeliumBiker
 {
-    class PhysicsMath
+    internal class PhysicsMath
     {
         public static bool RectanglePoint(Rectangle rectangle, Vector2 point)
         {
@@ -24,7 +21,8 @@ namespace HeliumBiker
         {
             for (int i = 0; i < physicsObject.Shape.Count(); i++)
             {
-                for( int j = 0; j < physicsObject_2.Shape.Count(); j++){
+                for (int j = 0; j < physicsObject_2.Shape.Count(); j++)
+                {
                     if (shapesCollide(physicsObject.Position, physicsObject.Shape[i], physicsObject_2.Position, physicsObject_2.Shape[j]))
                     {
                         physicsObject.collitionWith(physicsObject_2);
@@ -45,6 +43,5 @@ namespace HeliumBiker
             }
             return false;
         }
-
     }
 }

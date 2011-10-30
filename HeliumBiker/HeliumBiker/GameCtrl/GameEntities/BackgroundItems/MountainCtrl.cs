@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl.GameEntities.BackgroundItems
 {
-    class MountainCtrl
+    internal class MountainCtrl
     {
         private static float yDisp = 150f;
         private List<FrontMountain> mountains;
         private FrontMountain activeMountain;
         private float worldDistance;
+
         public MountainCtrl(float worldDistance, float velHorizontal)
         {
             this.worldDistance = worldDistance;
@@ -26,7 +25,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.BackgroundItems
             float vel = 5f * disp / 6f;
             foreach (FrontMountain mountain in mountains)
             {
-                mountain.Position += new Vector2(vel,0);
+                mountain.Position += new Vector2(vel, 0);
             }
 
             for (int i = 0; i < mountains.Count - 1; i++)
@@ -50,6 +49,5 @@ namespace HeliumBiker.GameCtrl.GameEntities.BackgroundItems
                 mountain.draw(sp);
             }
         }
-
     }
 }

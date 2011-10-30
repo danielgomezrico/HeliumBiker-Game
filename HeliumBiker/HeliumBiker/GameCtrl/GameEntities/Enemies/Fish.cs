@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework.Graphics;
-using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
-using Microsoft.Xna.Framework;
-using HeliumBiker.GameCtrl.GameEntities.ThrowableObjects;
 using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
+using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
+using HeliumBiker.GameCtrl.GameEntities.ThrowableObjects;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl.GameEntities.Enemies
 {
-    class Fish : ThrowableObject
+    internal class Fish : ThrowableObject
     {
         private bool alive = true;
 
-        public Fish (Vector2 position)
-            : base(position,new Vector2(30f,30f),0.0f,Color.White,getTexture(),Animation.getAnimation(getTexture()),getShapes())
+        public Fish(Vector2 position)
+            : base(position, new Vector2(30f, 30f), 0.0f, Color.White, getTexture(), Animation.getAnimation(getTexture()), getShapes())
         {
             LayerDepth = 0.1f;
             Animation.AnimationRate = 20f;
@@ -47,7 +44,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.Enemies
 
         public override void update(GameTime gameTime)
         {
-            Angle = (float)Math.Atan2(Velocity.X, -Velocity.Y) + MathHelper.ToRadians(90f); 
+            Angle = (float)Math.Atan2(Velocity.X, -Velocity.Y) + MathHelper.ToRadians(90f);
             base.update(gameTime);
         }
 

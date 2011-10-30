@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl.GameEntities.BackgroundItems
 {
-    class WaterCtrl
+    internal class WaterCtrl
     {
         private static float yDisp = 500f;
         private List<Water> waters;

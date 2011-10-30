@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
 
 namespace HeliumBiker.GameCtrl.GameEntities.PlayerParts
 {
-    class Bike : PhysicsObject
+    internal class Bike : PhysicsObject
     {
         public Bike(Vector2 position, float angle, Color color)
-            : base(position, new Vector2(76,76), angle, color, getLibTexuture(), Animation.getAnimation(getLibTexuture()), getShapes())
+            : base(position, new Vector2(76, 76), angle, color, getLibTexuture(), Animation.getAnimation(getLibTexuture()), getShapes())
         {
             LayerDepth = 0.1f;
         }

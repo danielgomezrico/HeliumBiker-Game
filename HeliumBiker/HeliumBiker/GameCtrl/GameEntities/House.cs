@@ -1,25 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
+using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
-using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
 
 namespace HeliumBiker.GameCtrl.GameEntities
 {
-    class House : PhysicsObject
+    internal class House : PhysicsObject
     {
         private List<Ballon> ballons;
         private bool collided = false;
 
         public House(Vector2 position)
-            : base(position, new Vector2(512,512), 0f, Color.White, getLibTexuture(), Animation.getAnimation(getLibTexuture()), getShapes())
+            : base(position, new Vector2(512, 512), 0f, Color.White, getLibTexuture(), Animation.getAnimation(getLibTexuture()), getShapes())
         {
             LayerDepth = 0.1f;
             ballons = new List<Ballon>();
-            ballons.AddRange(Ballon.createBallons(position + new Vector2(-200, 69),14));
+            ballons.AddRange(Ballon.createBallons(position + new Vector2(-200, 69), 14));
             ballons.AddRange(Ballon.createBallons(position + new Vector2(107, -147), 50));
         }
 

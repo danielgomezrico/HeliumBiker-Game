@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
+using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
+using HeliumBiker.ScreenCtrl;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using HeliumBiker.GameCtrl.GameEntities.ShapeCtrl;
-using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
-using HeliumBiker.ScreenCtrl;
 
 namespace HeliumBiker.GameCtrl.GameEntities.Enemies
 {
-    class Monster : PhysicsObject
+    internal class Monster : PhysicsObject
     {
         private Player player;
         private World world;
         private int frameCount = 0;
+
         public Monster(Player player, World world)
-            : base(new Vector2(0,world.Floor),new Vector2(200,200), 0.0f ,Color.White, getTexture(), Animation.getAnimation(getTexture()),getShapes())
+            : base(new Vector2(0, world.Floor), new Vector2(200, 200), 0.0f, Color.White, getTexture(), Animation.getAnimation(getTexture()), getShapes())
         {
             this.player = player;
             this.world = world;
@@ -44,7 +41,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.Enemies
             float percent = (world.Floor - player.Position.Y) / world.Floor;
             float yLimit = world.Floor;
             float fishP = (percent - limit) / percent;
-            
+
             yLimit -= world.Floor / 3 * (1f - percent) - 50;
             if (percent < limit)
             {

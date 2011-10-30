@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using HeliumBiker.DeviceCtrl;
 using HeliumBiker.ScreenCtrl;
-using Microsoft.Xna.Framework.Graphics;
-using HeliumBiker.DeviceCtrl;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.MenuCtrl
 {
-    class MenuAbout : Screen
+    internal class MenuAbout : Screen
     {
         Texture2D bg;
         Button b;
@@ -22,7 +18,6 @@ namespace HeliumBiker.MenuCtrl
             b = new Button(new Vector2(Game1.width - 400, Game1.height - 300), new Vector2(300, 300), TextureE.back);
             b.Focus = true;
         }
-         
 
         public override void update(Microsoft.Xna.Framework.GameTime gameTime)
         {

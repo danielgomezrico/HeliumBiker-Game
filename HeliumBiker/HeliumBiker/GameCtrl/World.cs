@@ -1,20 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using HeliumBiker.GameCtrl.GameEntities;
-using HeliumBiker.ScreenCtrl;
-using Microsoft.Xna.Framework.Graphics;
 using HeliumBiker.DeviceCtrl;
+using HeliumBiker.GameCtrl.GameEntities;
 using HeliumBiker.GameCtrl.GameEntities.BackgroundItems;
-using Microsoft.Xna.Framework;
-using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
 using HeliumBiker.GameCtrl.GameEntities.Enemies;
+using HeliumBiker.GameCtrl.GameEntities.PlayerParts;
+using HeliumBiker.ScreenCtrl;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace HeliumBiker.GameCtrl
 {
-    class World : Screen
+    internal class World : Screen
     {
         public enum GameState { playing, won, lost }
 
@@ -38,6 +36,7 @@ namespace HeliumBiker.GameCtrl
             get { return gameState; }
             set { gameState = value; }
         }
+
         private Texture2D bg;
         private Vector2 bgPos;
 
@@ -57,7 +56,7 @@ namespace HeliumBiker.GameCtrl
             GameLib.getInstance().loadGameTextures();
             objs = new List<PhysicsObject>();
             setVariables(level);
-            mountains = new MountainCtrl(worldLength,horizontalVel);
+            mountains = new MountainCtrl(worldLength, horizontalVel);
             waters = new WaterCtrl(worldLength, horizontalVel);
             bMountain = new BackMountain(new Vector2(0, 0f));
             monster = new Monster(player, this);
@@ -76,7 +75,7 @@ namespace HeliumBiker.GameCtrl
                     worldLength = 20;
                     Floor = Game1.height;
                     horizontalVel = 6;
-                    player = new Player(new Vector2(100f, Game1.height/2f), DeviceManager, this);
+                    player = new Player(new Vector2(100f, Game1.height / 2f), DeviceManager, this);
                     birds = new BirdGenerator(this, 6000f, horizontalVel);
                     fishes = new FishGenerator(this, 4000f);
                     break;
@@ -84,7 +83,7 @@ namespace HeliumBiker.GameCtrl
                     worldLength = 30;
                     Floor = Game1.height;
                     horizontalVel = 6;
-                    player = new Player(new Vector2(100f, Game1.height/2f), DeviceManager, this);
+                    player = new Player(new Vector2(100f, Game1.height / 2f), DeviceManager, this);
                     birds = new BirdGenerator(this, 3000f, horizontalVel);
                     fishes = new FishGenerator(this, 1000f);
                     break;
@@ -92,7 +91,7 @@ namespace HeliumBiker.GameCtrl
                     worldLength = 50;
                     Floor = Game1.height;
                     horizontalVel = 6;
-                    player = new Player(new Vector2(100f, Game1.height/2f), DeviceManager, this);
+                    player = new Player(new Vector2(100f, Game1.height / 2f), DeviceManager, this);
                     birds = new BirdGenerator(this, 2000f, horizontalVel);
                     fishes = new FishGenerator(this, 600f);
                     break;
@@ -155,7 +154,7 @@ namespace HeliumBiker.GameCtrl
             for (int i = 0; i < objs.Count; i++)
             {
                 PhysicsMath.ObjectsCollition(objs[i], player.Bike);
-                for (int j = player.Ballons.Count - 1; j >= 0 ; j--)
+                for (int j = player.Ballons.Count - 1; j >= 0; j--)
                 {
                     PhysicsMath.ObjectsCollition(objs[i], player.Ballons[j]);
                 }
@@ -220,25 +219,30 @@ namespace HeliumBiker.GameCtrl
             get { return horizontalVel; }
             set { horizontalVel = value; }
         }
+
         public int Floor
         {
             get { return floor; }
             set { floor = value; }
         }
+
         public float CurrentDistance
         {
             get { return currentDistance; }
             set { currentDistance = value; }
         }
+
         public float WorldLength
         {
             get { return worldLength; }
         }
+
         internal List<PhysicsObject> Objs
         {
             get { return objs; }
             set { objs = value; }
         }
-        #endregion
+
+        #endregion gets y sets
     }
 }

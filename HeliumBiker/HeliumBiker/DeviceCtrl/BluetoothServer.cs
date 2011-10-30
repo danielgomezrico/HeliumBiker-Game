@@ -1,59 +1,77 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using InTheHand.Net.Sockets;
-using System.Threading;
 using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+using InTheHand.Net.Sockets;
 
 namespace HeliumBiker.DeviceCtrl
-{ 
-    class BluetoothServer
+{
+    internal class BluetoothServer
     {
         private const String GUID_SERVER = "{00112233-4455-6677-8899-aabbccddeeff}";
         private const int MESSAGE_SIZE = 30;
-        BluetoothListener bluetoothListener;
-        Thread threadListen;
-        StreamAnalizer streamAnalizer;
+
+        private BluetoothListener bluetoothListener;
+        private Thread threadListen;
+        private StreamAnalizer streamAnalizer;
+        private bool acceptConnections;
 
         public BluetoothServer(Game1 game)
         {
+            acceptConnections = true;
             bluetoothListener = new BluetoothListener(new Guid(GUID_SERVER));
             streamAnalizer = new StreamAnalizer(game);
         }
 
-        public void startListen()
+        public void StartListen()
         {
-            threadListen = new Thread(listen);
+            threadListen = new Thread(Listen);
             threadListen.Start();
         }
 
-        private void listen()
+        private void Listen()
         {
             bluetoothListener.Start();
-            BluetoothClient client = bluetoothListener.AcceptBluetoothClient();
-            NetworkStream stream = client.GetStream();
-            string message = string.Empty;
 
-            while (stream.CanRead)
+            while (acceptConnections)
             {
-                byte[] buffer = new byte[MESSAGE_SIZE];
+                BluetoothClient client = bluetoothListener.AcceptBluetoothClient();
+                if (client != null)
+                {
+                    NetworkStream stream = client.GetStream();
+                    string message = string.Empty;
 
-                stream.Read(buffer, 0, MESSAGE_SIZE);
+                    byte[] buffer = new byte[MESSAGE_SIZE];
 
-                message = Encoding.UTF8.GetString(buffer);
+                    while (stream.CanRead)
+                    {
+                        stream.Read(buffer, 0, MESSAGE_SIZE);
 
-                streamAnalizer.addMessage(message);
+                        message = Encoding.UTF8.GetString(buffer);
+
+                        streamAnalizer.addMessage(message);
+                    }
+                }
             }
         }
 
+        private void StopListen()
+        {
+            if (threadListen != null && threadListen.IsAlive)
+            {
+                //TODO: probar
+                bluetoothListener.EndAcceptBluetoothClient(null);
+                bluetoothListener.Stop();
+                acceptConnections = false;
+                threadListen.Join();
+            }
+        }
 
         internal static DeviceManager getDeviceManager(Game1 game)
         {
             BluetoothServer bs = new BluetoothServer(game);
-            bs.startListen(); 
+            bs.StartListen();
             return bs.streamAnalizer;
         }
     }
 }
-

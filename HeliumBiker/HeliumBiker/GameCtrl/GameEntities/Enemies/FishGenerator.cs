@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Xna.Framework;
 
 namespace HeliumBiker.GameCtrl.GameEntities.Enemies
 {
-    class FishGenerator
+    internal class FishGenerator
     {
         private World world;
         private float intensityTime;
@@ -27,7 +25,7 @@ namespace HeliumBiker.GameCtrl.GameEntities.Enemies
             if ((elapsedTime += gameTime.ElapsedGameTime.Milliseconds) > intensityTime)
             {
                 Fish f = new Fish(new Vector2(random.Next(Game1.width / 3, Game1.width) + world.CurrentDistance, world.Floor));
-                f.Acc = new Vector2(-2f, -11f + random.Next(-6,1));
+                f.Acc = new Vector2(-2f, -11f + random.Next(-6, 1));
                 world.Objs.Add(f);
                 fishes.Add(f);
                 elapsedTime = 0;
