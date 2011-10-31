@@ -14,11 +14,11 @@ namespace HeliumBiker
         ScreenManager screenManager;
         DeviceManager deviceManager;
 
-        public static const int width = 1024;
-        public static const int height = 600;
+        public const int width = 1024;
+        public const int height = 600;
         public static string testText = "";
 
-        private const Color backgroundColor = new Color(233, 248, 255);
+        private Color backgroundColor = new Color(233, 248, 255);
 
         public Game1()
         {
