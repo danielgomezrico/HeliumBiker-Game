@@ -14,17 +14,20 @@ namespace HeliumBiker
         ScreenManager screenManager;
         DeviceManager deviceManager;
 
-        public static int width = 1024;
-        public static int height = 600;
-
+        public static const int width = 1024;
+        public static const int height = 600;
         public static string testText = "";
+
+        private const Color backgroundColor = new Color(233, 248, 255);
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferWidth = width;
             graphics.PreferredBackBufferHeight = height;
+
             IsMouseVisible = true;
+
             Content.RootDirectory = "Content";
         }
 
@@ -57,10 +60,12 @@ namespace HeliumBiker
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(new Color(233, 248, 255));
+            GraphicsDevice.Clear(backgroundColor);
 
             base.Draw(gameTime);
+
             spriteBatch.Begin();
+
             string fps = "fps " + (1f / (float)gameTime.ElapsedGameTime.TotalSeconds);
             //spriteBatch.DrawString(GameLib.getInstance().get(FontE.percentage), fps, new Vector2(900f, 10f), Color.White);
             //spriteBatch.DrawString(GameLib.getInstance().get(FontE.percentage), testText, new Vector2(10f, 30f), Color.White);
