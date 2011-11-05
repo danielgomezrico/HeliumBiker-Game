@@ -11,12 +11,13 @@ namespace HeliumBiker.MenuCtrl
         private float elapsedTime;
         private float i = 0.1f;
         private string text;
-        private Color cText;
+        private Color selectedColor;
 
         public Button(Vector2 position, Vector2 size, TextureE textureE) :
             base(position, size, Vector2.Zero, 0f, Color.White, getTexture(textureE), Animation.getAnimation(getTexture(textureE)))
         {
             disp = new Vector2(10f, 10f);
+            selectedColor = new Color(230, 230, 230);
             LayerDepth = 0.5f;
         }
 
@@ -43,7 +44,7 @@ namespace HeliumBiker.MenuCtrl
                     elapsedTime -= floatingTime;
                     Position = new Vector2(Position.X, Position.Y + jumpSpeed);
                 }
-                Color = new Color(240, 240, 240);
+                Color = selectedColor;
             }
             else
             {

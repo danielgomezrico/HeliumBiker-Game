@@ -43,10 +43,8 @@ namespace HeliumBiker.DeviceCtrl
 
                     byte[] buffer = new byte[MESSAGE_SIZE];
 
-                    while (stream.CanRead)
+                    while (stream.Read(buffer, 0, MESSAGE_SIZE) != 0) // 0 = connection is lost
                     {
-                        stream.Read(buffer, 0, MESSAGE_SIZE);
-
                         message = Encoding.UTF8.GetString(buffer);
 
                         streamAnalizer.addMessage(message);
