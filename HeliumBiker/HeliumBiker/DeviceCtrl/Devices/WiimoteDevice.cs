@@ -10,7 +10,7 @@ namespace HeliumBiker.DeviceCtrl.Devices
     /// </summary>
     internal class WiimoteDevice : DeviceManager
     {
-        private Vector2 position = Vector2.Zero;
+        private Vector2 position;
         private Wiimote wiimote;
         private Thread searchThread;
         Game1 game;
@@ -20,6 +20,7 @@ namespace HeliumBiker.DeviceCtrl.Devices
             : base(game)
         {
             this.game = game;
+            this.position = Vector2.Zero;
         }
 
         /// <summary>
@@ -57,7 +58,7 @@ namespace HeliumBiker.DeviceCtrl.Devices
 
             if (wiimoteCollection.Count == 1)
             {
-                DeviceConnectionManager.Connected = true;
+                Connected = true;
 
                 wiimote = wiimoteCollection[0];
 
@@ -74,7 +75,7 @@ namespace HeliumBiker.DeviceCtrl.Devices
             }
             else
             {
-                DeviceConnectionManager.Connected = false;
+                Connected = false;
             }
             //}
         }
@@ -83,6 +84,7 @@ namespace HeliumBiker.DeviceCtrl.Devices
         {
             Wiimote wii = (Wiimote)sender;
             WiimoteState wiimoteState = e.WiimoteState;
+            VInput = InputE.center;
 
             if (wiimoteState.ButtonState.Up)
             {
@@ -91,10 +93,6 @@ namespace HeliumBiker.DeviceCtrl.Devices
             else if (wiimoteState.ButtonState.Down)
             {
                 VInput = InputE.down;
-            }
-            else
-            {
-                HInput = InputE.center;
             }
 
             if (wiimoteState.ButtonState.Left)
@@ -105,31 +103,22 @@ namespace HeliumBiker.DeviceCtrl.Devices
             {
                 HInput = InputE.right;
             }
-            else
-            {
-                HInput = InputE.center;
-            }
 
             if (wiimoteState.ExtensionType == ExtensionType.Nunchuk)
             {
-                //wiimoteState.NunchukState.AccelState.Values.ToString();
-
-                position = new Vector2(wiimoteState.NunchukState.Joystick.X, wiimoteState.NunchukState.Joystick.Y);
-                //Console.WriteLine(position);
-
-                if (Math.Abs(position.X) < 0.4 || Math.Abs(position.Y) < 0.4)
+                if (Math.Abs(wiimoteState.NunchukState.Joystick.X) > 0.3 || Math.Abs(wiimoteState.NunchukState.Joystick.Y) > 0.3)
                 {
+                    //TODO: Revisar esta formula, como crear el position con base en el nunchuk
+                    position = new Vector2(wiimoteState.NunchukState.Joystick.X, wiimoteState.NunchukState.Joystick.Y);
+
+                    Console.WriteLine(position);
                     FiringInput = InputE.shooting;
                 }
                 else
                 {
                     FiringInput = InputE.notShooting;
                 }
-                //wiimoteState.NunchukState.C;
-                //wiimoteState.NunchukState.Z;
             }
-            //WiimoteInfo wi = mWiimoteMap[((Wiimote)sender).ID];
-            //wi.UpdateState(e);
         }
 
         private void wiimoteExtensionChanged(object sender, WiimoteExtensionChangedEventArgs e)

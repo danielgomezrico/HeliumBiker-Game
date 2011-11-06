@@ -2,7 +2,6 @@
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
-using HeliumBiker.DeviceCtrl.Devices;
 using InTheHand.Net.Sockets;
 
 namespace HeliumBiker.DeviceCtrl
@@ -36,11 +35,12 @@ namespace HeliumBiker.DeviceCtrl
 
             while (acceptConnections)
             {
-                DeviceConnectionManager.Connected = false;
+                streamAnalizer.Connected = false;
 
                 BluetoothClient client = bluetoothListener.AcceptBluetoothClient();
 
-                DeviceConnectionManager.Connected = true;
+                streamAnalizer.Connected = true;
+
                 if (client != null)
                 {
                     NetworkStream stream = client.GetStream();

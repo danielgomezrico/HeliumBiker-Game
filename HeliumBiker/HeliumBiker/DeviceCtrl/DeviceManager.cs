@@ -8,9 +8,15 @@ namespace HeliumBiker.DeviceCtrl
         private InputE hInput;
         private InputE firingInput;
 
+        /// <summary>
+        /// If the Device is connected to the pc
+        /// </summary>
+        private bool connected;
+
         public DeviceManager(Game1 game)
             : base(game)
         {
+            connected = false;
         }
 
         public abstract Vector2 getPointPosition();
@@ -33,6 +39,12 @@ namespace HeliumBiker.DeviceCtrl
         {
             get { return hInput; }
             set { hInput = value; }
+        }
+
+        public bool Connected
+        {
+            get { return connected; }
+            set { connected = value; }
         }
 
         #endregion gets y sets

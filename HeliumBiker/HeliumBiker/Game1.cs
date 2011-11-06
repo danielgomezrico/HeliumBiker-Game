@@ -12,7 +12,7 @@ namespace HeliumBiker
         SpriteBatch spriteBatch;
 
         ScreenManager screenManager;
-        DeviceManager deviceManager;
+        private DeviceManager deviceManager;
 
         public const int width = 1024;
         public const int height = 600;
@@ -43,7 +43,7 @@ namespace HeliumBiker
             spriteBatch = new SpriteBatch(GraphicsDevice);
             GameLib.getInstance(this, spriteBatch);
             GameLib.getInstance().loadSounds();
-            deviceManager = DeviceFactory.getDeviceManagaer(this);
+            deviceManager = DeviceFactory.getDeviceManager(this);
             screenManager = new ScreenManager(this, deviceManager);
             Components.Add(deviceManager);
         }
@@ -70,6 +70,12 @@ namespace HeliumBiker
             //spriteBatch.DrawString(GameLib.getInstance().get(FontE.percentage), fps, new Vector2(900f, 10f), Color.White);
             //spriteBatch.DrawString(GameLib.getInstance().get(FontE.percentage), testText, new Vector2(10f, 30f), Color.White);
             spriteBatch.End();
+        }
+
+        public DeviceManager DeviceManager
+        {
+            get { return deviceManager; }
+            set { deviceManager = value; }
         }
     }
 }

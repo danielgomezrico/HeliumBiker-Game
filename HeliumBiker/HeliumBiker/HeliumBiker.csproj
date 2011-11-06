@@ -115,10 +115,9 @@
   <ItemGroup>
     <Compile Include="Animation.cs" />
     <Compile Include="DeviceCtrl\Devices\Bluetooth\BluetoothServer.cs" />
-    <Compile Include="DeviceCtrl\ComputerDevice.cs" />
+    <Compile Include="DeviceCtrl\Devices\ComputerDevice.cs" />
     <Compile Include="DeviceCtrl\DeviceManager.cs" />
     <Compile Include="DeviceCtrl\Devices\Bluetooth\BluetoothStreamAnalizer.cs" />
-    <Compile Include="DeviceCtrl\DeviceConnectionManager.cs" />
     <Compile Include="DeviceCtrl\Devices\WiimoteDevice.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Factory\DeviceFactory.cs" />

@@ -1,5 +1,4 @@
 ﻿using HeliumBiker.DeviceCtrl;
-using HeliumBiker.DeviceCtrl.Devices;
 using HeliumBiker.ScreenCtrl;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,6 +8,7 @@ namespace HeliumBiker.MenuCtrl
     internal class ConnectionScreen : Screen
     {
         private Button b;
+        private DeviceManager deviceManager;
 
         public ConnectionScreen(Game1 game, ScreenManager screenManager, DeviceManager dev)
             : base(game, screenManager, dev)
@@ -17,18 +17,20 @@ namespace HeliumBiker.MenuCtrl
             Texture2D bText = GameLib.getInstance().get(TextureE.connect);
             b = new Button(new Vector2(Game1.width / 2 - bText.Width / 2, Game1.height / 2 - bText.Height / 2), new Vector2(400, 400), TextureE.connect);
             b.Focus = true;
+
+            deviceManager = game.DeviceManager;
         }
 
         public override void update(Microsoft.Xna.Framework.GameTime gameTime)
         {
-            if (DeviceConnectionManager.Connected)
+            if (deviceManager.Connected)
             {
                 // go to menu
                 ScreenManager.startMenu();
             }
             else
             {
-                ScreenManager.Initialize();
+                //ScreenManager.Initialize();
                 //Go to connection menu
             }
             b.update(gameTime);
