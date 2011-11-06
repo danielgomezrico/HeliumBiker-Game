@@ -8,3 +8,5 @@ C:\Users\danielgomez22\Desktop\HeliumBiker Servidor\HeliumBiker\HeliumBikerConte
 C:\Users\danielgomez22\Desktop\HeliumBiker Servidor\HeliumBiker\HeliumBikerContent\obj\x86\Debug\Sounds\sonidos.xml
 C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBikerContent\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBikerContent\obj\x86\Debug\Sounds\sonidos.xml
+C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBikerContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBikerContent\obj\x86\Debug\Sounds\sonidos.xml

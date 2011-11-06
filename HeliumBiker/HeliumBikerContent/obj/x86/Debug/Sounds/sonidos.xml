@@ -11,16 +11,16 @@
     Compression Preset Name = &lt;none&gt;;
     Header Last Modified Low = 0;
     Header Last Modified High = 0;
-    Bank Last Revised Low = 338264522;
-    Bank Last Revised High = 30185139;
+    Bank Last Revised Low = 702376528;
+    Bank Last Revised High = 30186512;
 
     Wave
     {
         Name = 10;
         File = 10.wav;
-        Build Settings Last Modified Low = 338254522;
-        Build Settings Last Modified High = 30185139;
-        Compression Preset Name = Compression Preset;
+        Build Settings Last Modified Low = 589436872;
+        Build Settings Last Modified High = 30186512;
+        Compression Preset Name = &lt;none&gt;;
 
         Cache
         {
@@ -42,9 +42,9 @@
     {
         Name = BallonPop;
         File = BallonPop.wav;
-        Build Settings Last Modified Low = 338254522;
-        Build Settings Last Modified High = 30185139;
-        Compression Preset Name = Compression Preset;
+        Build Settings Last Modified Low = 623443564;
+        Build Settings Last Modified High = 30186512;
+        Compression Preset Name = &lt;none&gt;;
 
         Cache
         {
@@ -66,9 +66,9 @@
     {
         Name = 11;
         File = 11.wav;
-        Build Settings Last Modified Low = 338264522;
-        Build Settings Last Modified High = 30185139;
-        Compression Preset Name = Compression Preset;
+        Build Settings Last Modified Low = 702376528;
+        Build Settings Last Modified High = 30186512;
+        Compression Preset Name = &lt;none&gt;;
 
         Cache
         {

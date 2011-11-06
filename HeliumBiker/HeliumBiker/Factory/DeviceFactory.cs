@@ -1,4 +1,5 @@
 ﻿using HeliumBiker.DeviceCtrl;
+using HeliumBiker.DeviceCtrl.Devices;
 
 namespace HeliumBiker.Factory
 {
@@ -8,7 +9,10 @@ namespace HeliumBiker.Factory
         {
             //Game1.testText = "hi!";
             //return new ComputerDevice(game);
-            return BluetoothServer.getDeviceManager(game);
+            //return BluetoothServer.getDeviceManager(game);
+            WiimoteDevice wiiDevice = new WiimoteDevice(game);
+            wiiDevice.startSearchWiimote();
+            return wiiDevice;
         }
     }
 }

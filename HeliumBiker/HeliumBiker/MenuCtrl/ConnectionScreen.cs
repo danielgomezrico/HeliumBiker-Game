@@ -1,4 +1,5 @@
 ﻿using HeliumBiker.DeviceCtrl;
+using HeliumBiker.DeviceCtrl.Devices;
 using HeliumBiker.ScreenCtrl;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -20,10 +21,15 @@ namespace HeliumBiker.MenuCtrl
 
         public override void update(Microsoft.Xna.Framework.GameTime gameTime)
         {
-            if (Game1.testText.Length > 0)
+            if (DeviceConnectionManager.Connected)
             {
                 // go to menu
                 ScreenManager.startMenu();
+            }
+            else
+            {
+                ScreenManager.Initialize();
+                //Go to connection menu
             }
             b.update(gameTime);
         }

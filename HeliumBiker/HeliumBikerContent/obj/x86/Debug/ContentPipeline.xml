@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\pixel.xnb</Output>
-      <Time>2011-10-25T12:42:52-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\pixel.xnb</Output>
+      <Time>2011-11-05T19:07:33.7282884-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\ballon.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\ballon.xnb</Output>
-      <Time>2011-10-26T21:54:28-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\ballon.xnb</Output>
+      <Time>2011-11-05T19:07:33.6970894-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\frontMountains.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\frontMountains.xnb</Output>
-      <Time>2011-10-25T14:14:04-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\frontMountains.xnb</Output>
+      <Time>2011-11-05T19:07:33.7126889-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\backMountains.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\backMountains.xnb</Output>
-      <Time>2011-10-27T23:17:26-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\backMountains.xnb</Output>
+      <Time>2011-11-05T19:07:33.6970894-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\waves1.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\waves1.xnb</Output>
-      <Time>2011-10-25T16:27:58-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\waves1.xnb</Output>
+      <Time>2011-11-05T19:07:33.7282884-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\bike.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bike.xnb</Output>
-      <Time>2011-10-26T10:43:18-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bike.xnb</Output>
+      <Time>2011-11-05T19:07:33.7126889-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\bird.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bird.xnb</Output>
-      <Time>2011-10-26T16:13:10-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bird.xnb</Output>
+      <Time>2011-11-05T19:07:33.7126889-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\pirana.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\pirana.xnb</Output>
-      <Time>2011-10-27T09:36:03-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\pirana.xnb</Output>
+      <Time>2011-11-05T19:07:33.7282884-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\stone.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\stone.xnb</Output>
-      <Time>2011-10-26T22:46:36-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\stone.xnb</Output>
+      <Time>2011-11-05T19:07:33.7282884-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\hand.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\hand.xnb</Output>
-      <Time>2011-10-27T09:54:55-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\hand.xnb</Output>
+      <Time>2011-11-05T19:07:33.7126889-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\about.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\about.xnb</Output>
-      <Time>2011-10-27T23:36:27-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\about.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\exit.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\exit.xnb</Output>
-      <Time>2011-10-27T23:36:27-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\exit.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\logo.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\logo.xnb</Output>
-      <Time>2011-10-27T23:36:27-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\logo.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\menuScreen.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\menuScreen.xnb</Output>
-      <Time>2011-10-28T04:12:38-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\menuScreen.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\start.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\start.xnb</Output>
-      <Time>2011-10-27T23:36:27-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\start.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\connect.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\connect.xnb</Output>
-      <Time>2011-10-28T01:09:16-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\connect.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\house.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\house.xnb</Output>
-      <Time>2011-10-28T01:54:48-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\house.xnb</Output>
+      <Time>2011-11-05T19:07:33.7126889-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\ramp.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\ramp.xnb</Output>
-      <Time>2011-10-28T02:54:00-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\ramp.xnb</Output>
+      <Time>2011-11-05T19:07:33.7282884-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\back.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\back.xnb</Output>
-      <Time>2011-10-28T03:20:28-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\back.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\easy.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\easy.xnb</Output>
-      <Time>2011-10-28T03:20:28-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\easy.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\hard.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\hard.xnb</Output>
-      <Time>2011-10-28T03:20:28-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\hard.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\medium.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\medium.xnb</Output>
-      <Time>2011-10-28T03:20:28-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\medium.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\monster.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\monster.xnb</Output>
-      <Time>2011-10-28T03:51:57-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\monster.xnb</Output>
+      <Time>2011-11-05T19:07:33.7282884-04:00</Time>
     </Item>
     <Item>
       <Source>Images\Game\bg.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bg.xnb</Output>
-      <Time>2011-10-28T04:18:38-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\Game\bg.xnb</Output>
+      <Time>2011-11-05T19:07:33.6970894-04:00</Time>
     </Item>
     <Item>
       <Source>Images\GUI\aboutScreen.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\aboutScreen.xnb</Output>
-      <Time>2011-10-28T07:22:47-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Images\GUI\aboutScreen.xnb</Output>
+      <Time>2011-11-05T19:07:33.6814899-04:00</Time>
     </Item>
     <Item>
       <Source>Fonts\percentage.spritefont</Source>
@@ -232,8 +232,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Fonts\percentage.xnb</Output>
-      <Time>2011-10-28T01:22:15-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Fonts\percentage.xnb</Output>
+      <Time>2011-11-05T19:07:33.6502909-04:00</Time>
     </Item>
     <Item>
       <Source>Sounds\10.wav</Source>
@@ -241,8 +241,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\10.xnb</Output>
-      <Time>2011-10-28T08:10:46-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\10.xnb</Output>
+      <Time>2011-11-05T19:07:35.6938254-04:00</Time>
     </Item>
     <Item>
       <Source>Sounds\11.wav</Source>
@@ -250,8 +250,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\11.xnb</Output>
-      <Time>2011-10-28T08:10:46-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\11.xnb</Output>
+      <Time>2011-11-05T19:07:36.4893999-04:00</Time>
     </Item>
     <Item>
       <Source>Sounds\BallonPop.wav</Source>
@@ -259,8 +259,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\BallonPop.xnb</Output>
-      <Time>2011-10-28T07:47:50-04:00</Time>
+      <Output>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\Sounds\BallonPop.xnb</Output>
+      <Time>2011-11-05T19:07:36.5049994-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -268,10 +268,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBikerContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBikerContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\danielgomez22\Desktop\HeliumBiker-Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBikerContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBikerContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\danielgomez22\Desktop\Helium Game\HeliumBiker\HeliumBiker\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
