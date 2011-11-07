@@ -13,27 +13,29 @@ namespace HeliumBiker.DeviceCtrl.Devices
         private Vector2 position;
         private Wiimote wiimote;
         private Thread searchThread;
-        Game1 game;
-        //private bool canSearch;
+        private Game1 game;
 
         public WiimoteDevice(Game1 game)
             : base(game)
         {
             this.game = game;
             this.position = Vector2.Zero;
+            this.startSearching();
         }
+
+        #region Wiimote Search
 
         /// <summary>
         /// Searchs and connect the wiimote in a new thread
         /// </summary>
-        public void startSearchWiimote()
+        public void startSearching()
         {
             //canSearch = true;
-            searchThread = new Thread(this.initWiimote);
+            searchThread = new Thread(this.seachWiimote);
             searchThread.Start();
         }
 
-        private void initWiimote()
+        private void seachWiimote()
         {
             // find all wiimotes connected to the system
             WiimoteCollection wiimoteCollection = new WiimoteCollection();
@@ -79,6 +81,10 @@ namespace HeliumBiker.DeviceCtrl.Devices
             }
             //}
         }
+
+        #endregion Wiimote Search
+
+        #region Wiimote Events
 
         private void wiimoteChanged(object sender, WiimoteChangedEventArgs e)
         {
@@ -128,16 +134,11 @@ namespace HeliumBiker.DeviceCtrl.Devices
             //Then yes
         }
 
+        #endregion Wiimote Events
+
         public override Vector2 getPointPosition()
         {
             return position;
-        }
-
-        internal static DeviceManager getDeviceManager(Game1 game)
-        {
-            WiimoteDevice device = new WiimoteDevice(game);
-            device.startSearchWiimote();
-            return device;
         }
     }
 }

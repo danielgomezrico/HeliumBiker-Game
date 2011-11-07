@@ -10,11 +10,9 @@ namespace HeliumBiker.Factory
             //Game1.testText = "hi!";
             //return new ComputerDevice(game);
 
-            //return BluetoothServer.getDeviceManager(game);
+            //return new BluetoothDevice(game);
 
-            WiimoteDevice wiidevice = new WiimoteDevice(game);
-            wiidevice.startSearchWiimote();
-            return wiidevice;
+            return new WiimoteDevice(game);
         }
     }
 }

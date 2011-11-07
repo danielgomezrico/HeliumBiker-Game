@@ -18,6 +18,7 @@
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -30,7 +31,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -117,7 +117,7 @@
     <Compile Include="DeviceCtrl\Devices\Bluetooth\BluetoothServer.cs" />
     <Compile Include="DeviceCtrl\Devices\ComputerDevice.cs" />
     <Compile Include="DeviceCtrl\DeviceManager.cs" />
-    <Compile Include="DeviceCtrl\Devices\Bluetooth\BluetoothStreamAnalizer.cs" />
+    <Compile Include="DeviceCtrl\Devices\Bluetooth\bluetoothDevice.cs" />
     <Compile Include="DeviceCtrl\Devices\WiimoteDevice.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Factory\DeviceFactory.cs" />

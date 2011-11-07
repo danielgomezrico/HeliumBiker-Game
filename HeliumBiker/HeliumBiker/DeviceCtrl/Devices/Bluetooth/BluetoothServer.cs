@@ -11,72 +11,63 @@ namespace HeliumBiker.DeviceCtrl
         private const String GUID_SERVER = "{00112233-4455-6677-8899-aabbccddeeff}";
         private const int MESSAGE_SIZE = 30;
 
+        private BluetoothDevice bluetoothDevice;
         private BluetoothListener bluetoothListener;
         private Thread threadListen;
-        private BluetoothStreamAnalizer streamAnalizer;
-        private bool acceptConnections;
 
-        public BluetoothServer(Game1 game)
+        public BluetoothServer(Game1 game, BluetoothDevice device)
         {
-            acceptConnections = true;
             bluetoothListener = new BluetoothListener(new Guid(GUID_SERVER));
-            streamAnalizer = new BluetoothStreamAnalizer(game);
+            bluetoothDevice = device;
         }
 
-        public void StartListen()
+        #region Bluetooth listening
+
+        public void StartListening()
         {
             threadListen = new Thread(Listen);
             threadListen.Start();
         }
 
-        private void Listen()
-        {
-            bluetoothListener.Start();
-
-            while (acceptConnections)
-            {
-                streamAnalizer.Connected = false;
-
-                BluetoothClient client = bluetoothListener.AcceptBluetoothClient();
-
-                streamAnalizer.Connected = true;
-
-                if (client != null)
-                {
-                    NetworkStream stream = client.GetStream();
-                    string message = string.Empty;
-
-                    byte[] buffer = new byte[MESSAGE_SIZE];
-
-                    while (stream.Read(buffer, 0, MESSAGE_SIZE) != 0) // 0 = connection is lost
-                    {
-                        message = Encoding.UTF8.GetString(buffer);
-
-                        streamAnalizer.addMessage(message);
-                    }
-
-                    streamAnalizer.clearMessages();
-                }
-            }
-        }
-
-        private void StopListen()
+        private void StopListening()
         {
             if (threadListen != null && threadListen.IsAlive)
             {
                 //TODO: probar
                 bluetoothListener.EndAcceptBluetoothClient(null);
                 bluetoothListener.Stop();
-                acceptConnections = false;
                 threadListen.Join();
             }
         }
 
-        internal static DeviceManager getDeviceManager(Game1 game)
+        private void Listen()
         {
-            BluetoothServer bs = new BluetoothServer(game);
-            bs.StartListen();
-            return bs.streamAnalizer;
+            bluetoothListener.Start();
+
+            bluetoothDevice.Connected = false;
+
+            BluetoothClient client = bluetoothListener.AcceptBluetoothClient();
+
+            bluetoothDevice.Connected = true;
+
+            if (client != null)
+            {
+                NetworkStream stream = client.GetStream();
+                string message = string.Empty;
+
+                byte[] buffer = new byte[MESSAGE_SIZE];
+
+                while (stream.Read(buffer, 0, MESSAGE_SIZE) != 0) // 0 = connection is lost
+                {
+                    message = Encoding.UTF8.GetString(buffer);
+
+                    bluetoothDevice.addMessage(message);
+                }
+
+                bluetoothDevice.clearMessages();
+            }
         }
+
+        #endregion Bluetooth listening
     }
 }

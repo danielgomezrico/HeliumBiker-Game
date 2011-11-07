@@ -9,33 +9,30 @@ namespace HeliumBiker.DeviceCtrl
     /// At the moment it can analize Acceleration messages, Hold Sling Shot messages
     /// and Shot Sling Shot messages
     /// </summary>
-    internal class BluetoothStreamAnalizer : DeviceManager
+    internal class BluetoothDevice : DeviceManager
     {
         private Vector2 position = Vector2.Zero;
-        private Queue<string> qMessage;
-        //Thread threadAnalizer;
+        private Queue<string> qMessages;
+        private BluetoothServer server;
+        private Game1 game;
 
-        Game1 game;
-
-        public BluetoothStreamAnalizer(Game1 game)
+        public BluetoothDevice(Game1 game)
             : base(game)
         {
-            qMessage = new Queue<string>();
+            qMessages = new Queue<string>();
             this.game = game;
+
+            server = new BluetoothServer(game, this);
+            server.StartListening();
         }
 
-        public void startAnalizer(Game1 game)
-        {
-            //threadAnalizer = new Thread(analizer);
-            //threadAnalizer.Start();
-            qMessage = new Queue<string>();
-        }
+        #region Message analizers
 
         public void addMessage(string message)
         {
             if (!string.IsNullOrEmpty(message))
             {
-                qMessage.Enqueue(message);
+                qMessages.Enqueue(message);
             }
         }
 
@@ -44,7 +41,7 @@ namespace HeliumBiker.DeviceCtrl
         /// </summary>
         public void clearMessages()
         {
-            qMessage.Clear();
+            qMessages.Clear();
         }
 
         public void analizeAcceleration(float x, float y)
@@ -88,15 +85,19 @@ namespace HeliumBiker.DeviceCtrl
             FiringInput = InputE.notShooting;
         }
 
+        #endregion Message analizers
+
+        #region XNA Overrides
+
         /// <summary>
         /// Check if there's any message to read
         /// </summary>
         /// <param name="gameTime"></param>
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
-            if (qMessage != null && qMessage.Count > 0)
+            if (qMessages != null && qMessages.Count > 0)
             {
-                string qm = qMessage.Dequeue();
+                string qm = qMessages.Dequeue();
 
                 if (!string.IsNullOrEmpty(qm))
                 {
@@ -130,5 +131,7 @@ namespace HeliumBiker.DeviceCtrl
             pos.Normalize();
             return pos * 10;
         }
+
+        #endregion XNA Overrides
     }
 }
