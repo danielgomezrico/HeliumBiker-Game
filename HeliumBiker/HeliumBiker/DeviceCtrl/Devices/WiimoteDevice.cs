@@ -90,7 +90,6 @@ namespace HeliumBiker.DeviceCtrl.Devices
         {
             Wiimote wii = (Wiimote)sender;
             WiimoteState wiimoteState = e.WiimoteState;
-            VInput = InputE.center;
 
             if (wiimoteState.ButtonState.Up)
             {
@@ -99,6 +98,10 @@ namespace HeliumBiker.DeviceCtrl.Devices
             else if (wiimoteState.ButtonState.Down)
             {
                 VInput = InputE.down;
+            }
+            else
+            {
+                VInput = InputE.center;
             }
 
             if (wiimoteState.ButtonState.Left)
@@ -109,15 +112,17 @@ namespace HeliumBiker.DeviceCtrl.Devices
             {
                 HInput = InputE.right;
             }
+            else
+            {
+                HInput = InputE.center;
+            }
 
             if (wiimoteState.ExtensionType == ExtensionType.Nunchuk)
             {
                 if (Math.Abs(wiimoteState.NunchukState.Joystick.X) > 0.3 || Math.Abs(wiimoteState.NunchukState.Joystick.Y) > 0.3)
                 {
-                    //TODO: Revisar esta formula, como crear el position con base en el nunchuk
                     position = new Vector2(wiimoteState.NunchukState.Joystick.X, wiimoteState.NunchukState.Joystick.Y);
 
-                    Console.WriteLine(position);
                     FiringInput = InputE.shooting;
                 }
                 else
@@ -138,7 +143,10 @@ namespace HeliumBiker.DeviceCtrl.Devices
 
         public override Vector2 getPointPosition()
         {
-            return position;
+            //TODO: Revisar esta formula, como crear el position con base en el nunchuk
+            Vector2 newPos = new Vector2(-position.X, position.Y);
+            newPos.Normalize();
+            return newPos * 10;
         }
     }
 }

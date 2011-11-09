@@ -117,7 +117,7 @@
     <Compile Include="DeviceCtrl\Devices\Bluetooth\BluetoothServer.cs" />
     <Compile Include="DeviceCtrl\Devices\ComputerDevice.cs" />
     <Compile Include="DeviceCtrl\DeviceManager.cs" />
-    <Compile Include="DeviceCtrl\Devices\Bluetooth\bluetoothDevice.cs" />
+    <Compile Include="DeviceCtrl\Devices\Bluetooth\BluetoothDevice.cs" />
     <Compile Include="DeviceCtrl\Devices\WiimoteDevice.cs" />
     <Compile Include="Enums.cs" />
     <Compile Include="Factory\DeviceFactory.cs" />
