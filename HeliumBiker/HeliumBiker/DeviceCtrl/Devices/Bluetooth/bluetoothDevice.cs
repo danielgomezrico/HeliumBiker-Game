@@ -129,7 +129,7 @@ namespace HeliumBiker.DeviceCtrl
             //Game1.testText = position.X + "," + position.Y;
             Vector2 pos = new Vector2(position.X, -position.Y);
             pos.Normalize();
-            return pos * 10;
+            return pos * 11;
         }
 
         #endregion XNA Overrides
